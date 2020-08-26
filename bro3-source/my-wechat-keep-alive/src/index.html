@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router@3.3.3/dist/vue-router.js"></script>
+    <link rel="stylesheet" href="./css/second-view.css">
+    <link rel="stylesheet" href="./css/page-list.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/friend-circle.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <title>首页</title>
+</head>
+
+<body class="iconfont">
+    <div id="app">
+        <transition :name="action">
+            <keep-alive>
+                <router-view @change-action="changeAction" :bridge="compInfo" @get-info="getInfo"
+                    :active-msg="activeMsg" :jokelist="jokeList"></router-view>
+            </keep-alive>
+        </transition>
+    </div>
+    <script src="./index.js" type="module"></script>
+</body>
+
+</html>

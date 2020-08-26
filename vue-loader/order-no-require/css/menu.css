@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+#app{
+    width: 900px;
+    height: 80%;
+    margin: auto;
+    border: 1px solid #aaa;
+    display: flex;
+    user-select: none;
+}
+
+.orderwrap{
+    width: 35%;
+    height: 100%;
+    border-right: 1px solid #aaa;
+    display: flex;
+    flex-direction: column;
+}
+
+.productwarp{
+    width: 65%;
+    height: 100%;
+    border-left: 1px solid #aaa;
+    display: flex;
+    flex-direction: column;
+}  
+
+.title{
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+    color: #aaa;
+    font-weight: bold;
+}
+
+.order{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tags{
+    display: flex;
+    padding: 5px 10px;
+    justify-content: space-between;
+    font-size: 0.8em;
+}
+
+.tags .mark{
+    height: 1px;
+    background-color: rgb(0, 162, 255);
+}
+
+.productwarp .tags p{
+    padding: 5px;
+    font-size: 18px;
+}
+
+.listArea{
+    list-style-type: none;
+}
+
+.listItem{
+    display: flex;
+    padding: 8px 0px;
+    justify-content: space-between;
+    font-size: 0.8em;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: solid 1px #aaa;
+}
+
+p{
+    text-align: center;
+}
+
+p.name{
+    width: 35%;
+}
+
+p.count{
+    width: 15%;
+}
+
+p.price{
+    width: 15%;
+}
+
+p.opration{
+    width: 35%;
+}
+
+.opration.btns a{
+    color: rgb(0, 162, 255);
+}
+
+
+.tags div{
+    flex-grow: 1;
+}
+
+.product .tags p{
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.dishArea{
+    flex-grow: 1;
+    padding: 5px;
+    display: flex;
+}
+
+.dishArea>div{
+    flex-grow: 1;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dishtitle{
+    width: 140px;
+    font-size: 22px;
+    color: rgb(0, 162, 255);
+    font-weight: bold;
+    border-bottom: rgb(0, 162, 255) 1px solid;
+}
+
+.itembox{
+    flex-grow: 1;
+    /* !!strange，阻止了item溢出 */
+    height: 0px;
+    overflow-y: auto;
+}
+
+.item{
+    width: 170px;
+    padding: 5px;
+    border-bottom: tomato 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.item img{
+    width: 100%;
+}
+
+.item button{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: tomato;
+    color: #fff;
+    margin: 5px auto;
+}
+

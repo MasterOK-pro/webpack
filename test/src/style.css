@@ -1,0 +1,106 @@
+       *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        /* 记事本样式 */
+        #note{
+            width: 600px;
+            margin: 200px auto 0px;
+            box-shadow: 0px 0px 10px 5px #aaa;
+            border-radius: 5px;
+            background-color: #ddd;
+        }
+        /* 记事本标题 */
+        h1{
+            text-align: center;
+        }
+        /* 输入栏 */
+        .inputBar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .inputBar input{
+            font-size: 18px;
+            flex-grow: 1;
+            outline: none;
+            margin: 5px;
+            padding: 3px;
+            border: none;
+            border-radius: 3px;
+        }
+        .inputBar button{
+            font-size: 18px;
+            margin: 5px;
+            padding: 3px;
+            background-color: rgb(0, 204, 255);
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+        }
+        /* 水平分割线 */
+        hr.row{
+            width: 590px;
+            margin: 5px auto;
+        }
+        /* 列表容器 */
+        .listContainer{
+            display: flex;
+            justify-content: space-around;
+            padding: 5px 0px;
+        }
+        /* 列表通用样式 */
+        ul{
+            list-style-type: none;
+            height: 175px;
+            overflow-y: scroll;
+        }
+        li{
+            padding: 3px;
+            border-bottom: solid 1px #aaa;
+        }
+        .listTitle{
+            text-align: center;
+        }
+        /* 待办列表 */
+        .todoList{
+            padding: 5px;
+            width: 289px;
+        }
+        .todoItem,.doneItem{
+            display: flex;
+            align-items: center;
+        }
+        .item{
+            flex-grow: 1;
+        }
+        .doneItem .item{
+            text-decoration: line-through;
+            color: #666;
+        }
+        .done{
+            margin: 3px;
+            outline: none;
+            border: none;
+            border-radius: 3px;
+            background-color: green;
+            color: white;
+            padding: 2px;
+        }
+        .delete{
+            margin: 3px;
+            outline: none;
+            border: none;
+            border-radius: 3px;
+            background-color: red;
+            color: white;
+            padding: 2px;
+        }
+        /* 完成列表 */
+        .doneList{
+            width: 289px;
+            padding: 5px;
+        }
+        

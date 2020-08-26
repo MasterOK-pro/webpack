@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuex@3.4.0/dist/vuex.js"></script>
+    <title>todolist</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="note">
+        <h1>备忘录</h1>
+        <input-bar></input-bar>
+        <hr class="row">
+        <div class="listContainer">
+            <div class="todoList">
+                <h3 class="listTitle">待办事项</h3>
+                <todo-list></todo-list>
+            </div>
+
+            <hr class="column">
+
+            <div class="doneList">
+                <h3 class="listTitle">完成事项</h3>
+                <done-list></done-list>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+</body>
+</html>

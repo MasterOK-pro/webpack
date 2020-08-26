@@ -1,0 +1,159 @@
+/* 跳转页 */
+.second-view{
+    height: 100%;
+    width: 100%;
+    /* relative就切完才出画面 */
+    position: absolute;
+    /* background-color: #39c5bb; */
+}
+
+/* 聊天页 */
+.chat-view,.friend-view
+,.me-view,.discover-view{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(237, 237, 237);
+}
+/* 聊天页头 */
+.chat-view-head,.friend-view-head
+,.me-view-head,.discover-view-head{
+    height: 3em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6; 
+}
+.friend-view-head{
+    border: none;
+    background-color: #fff;
+}
+.chat-view-head-left
+,.friend-view-head-left
+,.me-view-head-left
+,.discover-view-head-left{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1em;
+}
+.me-view-head-left{
+    width: 25%;
+}
+.chat-view-head-right
+,.friend-view-head-right
+,.discover-view-head-right{
+    display: flex;
+    align-items: center;
+    vertical-align: text-top;
+    margin-right: 1em;
+}
+.chat-view-head-right>span,.friend-view-head-right>span{
+    vertical-align: middle;
+}
+/* 聊天体 */
+.chat-view-body
+,.friend-view-body
+,.discover-view-body{
+    flex-grow: 1;
+}
+/* 聊天尾 */
+.chat-view-end{
+    height: 3em;
+    border-top: 1px solid #e6e6e6; 
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.chat-view-end span{
+    font-size: 2em;
+    margin-right: 0.5em;
+}
+.chat-view-end span:last-child{
+    margin-right: 0;
+}
+.chat-view-end input{
+    flex-grow: 1;
+    padding: 0.5em;
+    margin-right: 1em;
+    outline: none;
+    border: none;
+    border-radius: 0.3em;
+}
+
+/* 聊天信息条 */
+.chat-item{
+    display: flex;
+    margin-top: 1em;
+}
+.chat-item.is-mine{
+    flex-direction: row-reverse;
+}
+.chat-msg{
+    margin-left: 1em;
+    line-height: 2em;
+    padding: 0 0.5em;
+    background-color: white;
+    border-radius: 0.3em;
+}
+.chat-item.is-mine .chat-msg{
+    background-color: rgb(24, 192, 24);
+}
+
+/* 朋友页 */
+.friend-head.page-item{
+    padding: 1em;
+    box-sizing: content-box;
+}
+.friend.page-text-end{
+    flex-direction: row-reverse;
+}
+.friend.page-list{
+    margin-top: 1em;
+}
+.friend.page-item{
+    padding: 0 0 0 1em;
+}
+.friend-sendmsg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 3em;
+    padding: 1em;
+    border-bottom: 1px solid rgb(237, 237, 237);
+    color: blue;
+}
+.friend-sendmsg.first{
+    margin-top: 1em;
+}
+.friend-sendmsg span{
+    margin-right: 1em;
+}
+.friend-sendmsg span:last-child{
+    font-weight: bold;
+}
+
+/* 我的信息 */
+.me.page-text-box{
+    margin-left: .5em;
+}
+.me.end-header img{
+    height: 2em;
+}
+.me.page-text-end{
+    width: unset;
+    justify-content: flex-end;
+}
+.me.end-header{
+    width: unset;
+    line-height: 2em;
+    direction: rtl;
+    padding-right: 0.5em;
+}
+.me.end-header span{
+    color: #b1b1b1;
+}

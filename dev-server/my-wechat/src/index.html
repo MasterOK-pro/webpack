@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+</head>
+<body class="iconfont">
+    <div id="app">
+        <transition :name="action">
+            <router-view @change-action="changeAction" :bridge="compInfo"
+            @get-info="getInfo" :active-msg="activeMsg" :jokelist="jokeList"></router-view>
+        </transition>
+    </div>
+</body>
+</html>
